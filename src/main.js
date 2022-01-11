@@ -5,7 +5,7 @@ import DetailNewsPage from "./pages/detailNews";
 import HomePage from "./pages/home";
 import NewsPage from "./pages/news";
 import signin from "./pages/signup";
-import signup from "./pages/signup";
+import signup from "./pages/signin";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
