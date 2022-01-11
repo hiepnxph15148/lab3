@@ -14,9 +14,6 @@ const HomePage = {
             <div>
                 ${footer.render()}
             </div>
-            <div>
-            ${signup.render()}
-        </div>
         `;
     },
 };
