@@ -10,7 +10,6 @@ const HomePage = {
             <div>
                 ${NewsList.render()}
             </div>
-            
             <div>
                 ${footer.render()}
             </div>
