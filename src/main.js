@@ -19,7 +19,7 @@ router.on({
     "/": () => {
         render(HomePage.print());
     },
-    "/tuyensinh": () => {
+    "/about": () => {
         render(AboutPage.print());
     },
     "/news": () => {

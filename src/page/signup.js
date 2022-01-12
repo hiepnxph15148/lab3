@@ -2,7 +2,7 @@ const SignUp = {
     print() {
         return/* html */`
         <div class="max-w-5xl m-auto">
-        <div class="w-24 h-10 border-2 text-center py-1 my-10"><a href="/">Trở Về</a></div>
+        <div class="w-24 h-10 border-2 text-center py-1 my-10 hover:bg-[red] hover:text-white rounded-bl-full"><a href="/">Trở Về</a></div>
         <div class="mt-10 sm:mt-0">
         <div class="md:grid md:grid-cols-3 md:gap-6">
           <div class="md:col-span-1">
