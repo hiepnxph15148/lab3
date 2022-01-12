@@ -1,12 +1,10 @@
-import data from "../data";
-
-const footer = {
-    render() {
-        return `
-        <div class="text-center bg-[#191f37] py-4">
-        <p class="m-0 text-white">HIEPNXPH15148</p>
-        </div>
-        `;
-    },
+const Footer = {
+    print() {
+        return /* html */`
+        <footer class="bg-[#252c4f] text-white py-2 mt-8">
+            <h2 class="font-semibold text-center">Nguyễn Xuân Hiệp</h2>
+        </footer>
+        `
+    }
 };
-export default footer;
+export default Footer;

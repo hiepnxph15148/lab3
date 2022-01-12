@@ -1,38 +1,54 @@
+// import '../style.css'no
 import Navigo from "navigo";
-import Header from "./components/header";
-import AboutPage from "./pages/about";
-import DetailNewsPage from "./pages/detailNews";
-import HomePage from "./pages/home";
-import NewsPage from "./pages/news";
-import signin from "./pages/signup";
-import signup from "./pages/signin";
+import MenuList from "./components/menuList";
+import AboutPage from "./page/about";
+import AddNews from "./page/addnews";
+import AdminNews from "./page/adminew";
+import Dashboard from "./page/dashboard";
+import DetailNewsPage from "./page/detailpage";
+import EditNews from "./page/editnews";
+import HomePage from "./page/home";
+import NewsPage from "./page/news";
+import SignIn from "./page/signin";
+import SignUp from "./page/signup";
 
-const router = new Navigo("/", { linksSelector: "a" });
-
-const print = (content) => {
-    document.getElementById("header").innerHTML = Header.render();
-    document.getElementById("article").innerHTML = content;
-};
-
+const router = new Navigo("/", {linksSelector: "a"});
+const render = (content) => {
+    // document.getElementById("header").innerHTML = MenuList.print();
+    document.getElementById("app").innerHTML = content;
+}
 router.on({
     "/": () => {
-        print(HomePage.render());
+        render(HomePage.print());
     },
-    "/about": () => {
-        print(AboutPage.render());
-    },
-    "/signup": () =>{
-        print(signup.render())
-    },
-    "/signin": () =>{
-        print(signin.render())
+    "/tuyensinh": () => {
+        render(AboutPage.print());
     },
     "/news": () => {
-        print(NewsPage.render());
+        render(NewsPage.print());
+    },
+    "/signin": () => {
+        render(SignIn.print())
+    },
+    "/signup": () => {
+        render(SignUp.print())
     },
     "/news/:id": ({ data }) => {
         const { id } = data;
-        print(DetailNewsPage.render(id));
+        render(DetailNewsPage.print(id));
+    },
+    "/admin/dashboard": () => {
+        render(Dashboard.print())
+    },
+    "/admin/news": () => {
+        render(AdminNews.print())
+    },
+    "/admin/news/add": () => {
+        render(AddNews.print())
+    },
+    "/admin/news/:id/edit": ({ data }) => {
+        const { id } = data;
+        render(EditNews.print(id));
     },
 });
 router.resolve();
