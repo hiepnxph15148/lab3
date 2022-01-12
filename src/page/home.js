@@ -6,10 +6,16 @@ import NewsList from "../components/newsList";
 const HomePage = {
     print() {
         return `
-        <div class="max-w-5xl m-auto">
+            <div>
             ${MenuList.print()}
+            </div>
+            <div>
             ${Banner.print()}
+            </div>
+            <div>
             ${NewsList.print()}
+            </div>
+            <div>
             ${Footer.print()}
         </div>    
         `

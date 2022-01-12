@@ -1,34 +1,29 @@
 const MenuList = {
     print() {
         return /*html*/`
-        <header>
-            
-            <div class="bg-[#252c4f] py-[13px]">
-                <a href="#">
-                    <img src="https://picsum.photos/150/50" class="mx-auto" alt=""> 
-                </a>
-            </div>
-            <div class="bg-[#cc7701] flex">
-                <ul class="flex">
-                <li class="menu_list"><a href="/">Trang chủ</a></li>
-                <li class="menu_list"><a href="/tuyensinh">Tuyển sinh</a></li>
-                <li class="menu_list"><a href="/news">Tin Tức</a></li>
-                <li class="menu_list"><a href="/admin/dashboard">Dashboard</a></li>
-                <li class="menu_list">Tuyển dụng</li>
-                </ul>
-
-                <div class="flex my-2 mx-10">
-                <form action="">
-                    <input type="text"  value="" class="border-2 border-slate-900 w-100">
-                    <button class="bg-[#252c4f] ... border-2 border-slate-900 text-white hover:bg-white ... hover:text-[#252c4f]">Tìm kiếm</button>
-                </form>
-                <ul class="flex mx-3">
-                    <li class="mx-2 hover:text-white"><a href="/signin">Đăng Nhập</a></li>
-                    <li class="mx-2 hover:text-white"><a href="/signup">Đăng Ký</a></li>
-                </ul>
-                </div>
-            </div>
-        </header>
+        <div class="bg-[#191f37] py-4">
+        <a href="">
+          <img src="https://picsum.photos/250/100" class="mx-auto" alt="">
+        </a>
+      </div>
+    <div class="bg-[#ca7802]">
+        <ul class="flex">
+        <li><a href="/" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Trang chủ </a></li>
+        <li><a href="/about" class="block px-4 py-3 hover:bg-[red] hover:text-white">Tuyển sinh</a></li>
+        <li><a href="/product" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Chương trình đào tạo</a></li>
+        <li><a href="/contact" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Góc sinh viên</a></li>
+        <li><a href="/admin/dashboard"  class="block px-4 py-3 hover:bg-[red] hover:text-white ">Dashboard</a></li>
+        
+        <li><a href="/contact" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Tuyển dụng</a></li>
+        <li><a href="/signin" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Đăng nhập</a></li>
+        <li><a href="/signup" class="block px-4 py-3 hover:bg-[red] hover:text-white ">Đăng ký</a></li>
+        
+            <form action="" class="ml-[70px] mt-[10px]">
+            <input type="text">
+            <button class="border bg-blue-800 ... px-[10px] text-white ... border-none hover:bg-sky-500 ">Tìm kiếm</button>
+            </form>
+        </ul>
+    </div>
         `
     }
 }

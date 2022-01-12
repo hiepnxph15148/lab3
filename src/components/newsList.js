@@ -2,7 +2,8 @@ import data from "../data";
 const NewsList = {
     print() {
         return /*html*/`
-            <main class="grid gap-4 grid-cols-3 grid-rows-3 gap-x-10 ">
+        <h2 class="text-2xl font-semibold uppercase my-4">Tin tức học tập</h2>
+        <div class="grid grid-cols-3 gap-8 m-auto">
             ${data.map((post) => /* html */ `
                 <div class="news">
                     <div class="iteam">
@@ -17,7 +18,7 @@ const NewsList = {
             </div>
             `).join("")}
           
-          </main>
+          </div>
         `
     }
 };
