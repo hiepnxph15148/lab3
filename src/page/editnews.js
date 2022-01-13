@@ -6,7 +6,7 @@ const EditNews = {
         return /* html */`
         <div class="w-24 h-10 border-2 text-center py-1 my-10 ml-20"><a href="/admin/news">Trở Về</a></div>
         <div class="max-w-4xl m-auto bg-gray-100">
-        <h3 class="text-center font-semibold text-3xl mt-10 pt-10">Add News</h3>
+        <h3 class="text-center font-semibold text-3xl mt-10 pt-10">Edit News</h3>
         <form class="py-10 pl-20">
             <div class="my-10">
                 <label>Title:</label><br>
