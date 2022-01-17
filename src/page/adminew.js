@@ -123,18 +123,19 @@ const AdminNews = {
           </div>
         </nav>
       
-        <header class="bg-white shadow">
+        <header class="bg-white shadow flex justify-around">
           <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <h1 class="text-3xl font-bold text-gray-900">
               Dashboard
             </h1>
           </div>
-        </header>
         <a href="/admin/news/add">
-        <button type="submit" class=" mr-10 mt-10 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <button type="submit" class=" mr-10 mt-10 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                    Add
                   </button>
                   </a>
+          </header>
+
         <main>
           <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             <!-- Replace with your content -->
@@ -181,7 +182,8 @@ const AdminNews = {
                           <div class="text-sm text-gray-500">Optimization</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                          <a href="/admin/news/${post.id}/edit" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                          <a href="/admin/news/${post.id}/edit" class="text-indigo-600 hover:text-indigo-900">Sửa</a>
+                          <buttom class="inline-block bg-indigo-500 text-white text-sm py-2 px-2  ">Xóa</buttom>
                         </td>
                       </tr>
           
